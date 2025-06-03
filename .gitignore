@@ -1,4 +1,16 @@
-node_modules/
+# OS-specific files
 .DS_Store
-.env
+Thumbs.db
+
+# Dependency directories (if you add npm later)
+node_modules/
+
+# Build/output folders (future-proofing)
 dist/
+build/
+
+# Environment variables
+.env
+
+# VSCode settings (optional)
+.vscode/
