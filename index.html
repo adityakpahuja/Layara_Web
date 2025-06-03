@@ -1,32 +1,62 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Layara - Tabla Lehra Player</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Tone.js CDN -->
-  <script src="https://unpkg.com/tone/build/Tone.js"></script>
-</head>
-<body>
-  <div id="app">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Layara</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/tone"></script>
+  </head>
+  <body>
     <h1>Layara</h1>
-    
-    <label for="tala">Choose Tala:</label>
-    <select id="tala">
-      <option value="teentaal">Teentaal</option>
-      <option value="dadra">Dadra</option>
-      <option value="rupak">Rupak</option>
-    </select>
-
-    <label for="tempo">Tempo: <span id="tempoValue">120</span> BPM</label>
-    <input type="range" id="tempo" min="30" max="300" value="120" />
-
-    <button id="playBtn">Play</button>
-    <div id="matras"></div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
+    <div class="container">
+      <div class="selectors">
+        <label for="key">Key (Tonic):</label>
+        <select id="key">
+          <option value="C">C</option>
+          <option value="C#">C#</option>
+          <option value="D">D</option>
+          <option value="D#">D#</option>
+          <option value="E">E</option>
+          <option value="F">F</option>
+          <option value="F#">F#</option>
+          <option value="G">G</option>
+          <option value="G#">G#</option>
+          <option value="A">A</option>
+          <option value="A#">A#</option>
+          <option value="B">B</option>
+        </select>
+        <label for="instrument">Instrument:</label>
+        <select id="instrument">
+          <option value="sarangi">Sarangi</option>
+          <option value="harmonium">Harmonium</option>
+          <option value="flute">Flute</option>
+        </select>
+        <label for="raga">Raga:</label>
+        <select id="raga">
+          <option value="bhupali">Bhupali</option>
+          <option value="yaman">Yaman</option>
+          <option value="bageshree">Bageshree</option>
+          <option value="kafi">Kafi</option>
+          <option value="darbari">Darbari</option>
+          <option value="malkauns">Malkauns</option>
+          <option value="todi">Todi</option>
+          <option value="desh">Desh</option>
+        </select>
+        <label for="tala">Tala:</label>
+        <select id="tala">
+          <option value="teentaal">Teentaal</option>
+          <option value="jhaptaal">Jhaptaal</option>
+          <option value="ektaal">Ektaal</option>
+          <option value="rupak">Rupak</option>
+        </select>
+        <label for="tempo">Tempo: <span id="tempoValue">120</span> BPM</label>
+        <input type="range" id="tempo" min="30" max="400" value="120" />
+        <button id="playPauseBtn" onclick="togglePlayPause()">▶️ Play</button>
+        <button onclick="stopLoop()">⏹️ Stop</button>
+        <div id="matras" class="matra-container"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
