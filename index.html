@@ -1,0 +1,32 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layara - Tabla Lehra Player</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Tone.js CDN -->
+  <script src="https://unpkg.com/tone/build/Tone.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h1>Layara</h1>
+    
+    <label for="tala">Choose Tala:</label>
+    <select id="tala">
+      <option value="teentaal">Teentaal</option>
+      <option value="dadra">Dadra</option>
+      <option value="rupak">Rupak</option>
+    </select>
+
+    <label for="tempo">Tempo: <span id="tempoValue">120</span> BPM</label>
+    <input type="range" id="tempo" min="30" max="300" value="120" />
+
+    <button id="playBtn">Play</button>
+    <div id="matras"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
