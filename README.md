@@ -1,13 +1,13 @@
 # Layara 🎵
 
-Layara is a web-based tabla lehra player to help Indian classical musicians practice rhythm with melodic loops.
+Layara is a web/app based tabla lehra player to help Indian classical musicians practice rhythm with melodic loops.
 
 ---
 
-### 🛠️ Tech Stack
-- HTML/CSS/JavaScript
-- [Tone.js](https://tonejs.github.io/) for audio synthesis
-- Designed to be lightweight, fast, and mobile-friendly
+AI-Powered Tabla Accompaniment Tool
+
+Layara will be an experimental audio application that will generate customizable lehra (melodic loops) for tabla players.
+The goal is to combine Indian classical rhythm with modern web audio technology to create a flexible, inspiring practice companion.
 
 ### 🔧 Setup Instructions
 1. Clone the repository
